@@ -1,19 +1,37 @@
 body  {
   background-color: slategray;
 }
-.post {
-  margin-left: 20%;
+.blend {
+  mix-blend-mode: exclusion;
+}
+.inpost {
+  margin-left: 10%;
   padding: 1%;
   height: 40%;
-  width: 60%;
-  background-color: slategray;
+  width: 20%;
+  background-color: black;
+  color: slategray;
+  overflow:scroll;
+  display: inline-block;
+}
+.post {
+  margin-left: 25%;
+  padding: 1%;
+  height: 40%;
+  width: 20%;
+  background-color: black;
+  color: slategray;
 }
 .nav {
+      position: static;
       margin-top: 0px;
-      height: 40px;
+      height: 300px;
       width: 600px;
       background: slategray;
-      padding-left: 25%;
+      margin-left: 25%;
+      background-color: green;
+      overflow: scroll;
+      padding-left: 1%;
     }
     .nav ul {
       display: block;
@@ -48,14 +66,16 @@ body  {
       transform: scale(1.3);
     }
 .grow  {
+      padding-bottom: 3%;
+      margin-left: 25%;
+      margin-right: 25%;
       text-decoration: none;
       text-rendering: geometricPrecision;
-      position: relative;
       transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
       transform-origin: 50% 30%;
       text-align: center;
     }
 .grow:hover  {
-      color: #D46300;
+      color: lightblue;
       transform: scale(1.5);
     }
